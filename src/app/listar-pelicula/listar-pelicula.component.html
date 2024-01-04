@@ -1,0 +1,11 @@
+<div class="lista-peliculas">
+    <h2>Listado de Películas</h2>
+    <ul>
+      <li *ngFor="let pelicula of peliculas">
+        <h3>{{ pelicula.titulo }}</h3>
+        <p>Director: {{ pelicula.director }}</p>
+        <p>Año: {{ pelicula.anio }}</p>
+      </li>
+    </ul>
+  </div>
+  

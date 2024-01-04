@@ -1,0 +1,19 @@
+<div class="agregar-pelicula">
+    <h2>Agregar Película</h2>
+    <form #peliculaForm="ngForm" (ngSubmit)="onSubmit(peliculaForm)">
+      <div>
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" [(ngModel)]="pelicula.titulo" required>
+      </div>
+      <div>
+        <label for="director">Director:</label>
+        <input type="text" id="director" name="director" [(ngModel)]="pelicula.director" required>
+      </div>
+      <div>
+        <label for="anio">Año:</label>
+        <input type="number" id="anio" name="anio" [(ngModel)]="pelicula.anio" required>
+      </div>
+      <button type="submit" [disabled]="!peliculaForm.form.valid">Agregar Película</button>
+    </form>
+  </div>
+  
